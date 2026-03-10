@@ -11,9 +11,7 @@
     "lint": "pnpm -r lint",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
-    "db:generate": "pnpm --filter @campus/server prisma:generate",
-    "db:push": "pnpm --filter @campus/server exec prisma db push",
-    "db:seed": "pnpm --filter @campus/server exec prisma db seed",
+    "db:seed": "pnpm --filter @campus/server run seed",
     "test:epic3": "npm run test:epic3 --prefix server"
   },
   "engines": {
